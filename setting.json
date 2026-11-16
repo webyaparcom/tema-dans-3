@@ -1,0 +1,54 @@
+{
+  "order": false,
+  "user": false,
+  "description": {
+    "tr": "Pist Dans Kolektifi: Kadıköy’de yetişkinler için lindy hop, salsa, kizomba, Arjantin tangosu ve çağdaş dans. Seviye merdiveni, haftalık ders tablosu ve ücretsiz deneme dersi. Demo site; içerik kurgusaldır.",
+    "en": "Pist Dance Collective: lindy hop, salsa, kizomba, Argentine tango and contemporary dance for adults in Kadikoy. A level ladder, a weekly timetable and a free trial class. Demo site; content is fictional.",
+    "ar": "تجمّع بيست للرقص: ليندي هوب وسالسا وكيزومبا وتانغو أرجنتيني ورقص معاصر للبالغين في كاديكوي. سلّم مستويات وجدول أسبوعي ودرس تجريبي مجاني. موقع تجريبي؛ المحتوى افتراضي."
+  },
+  "keyword": {
+    "tr": "dans kursu kadıköy, lindy hop, salsa dersi, kizomba, tango dersi, çağdaş dans, yetişkin dans",
+    "en": "dance classes kadikoy, lindy hop, salsa class, kizomba, tango lesson, contemporary dance, adult dance",
+    "ar": "دروس رقص كاديكوي، ليندي هوب، دروس سالسا، كيزومبا، دروس تانغو، رقص معاصر، رقص للبالغين"
+  },
+  "category": "Kurumsal",
+  "name": "Pist Dans",
+  "domain": "dans-3.webyapar.com",
+  "langs": {
+    "tr": true,
+    "en": true,
+    "ar": true,
+    "de": false,
+    "ru": false,
+    "es": false,
+    "fr": false,
+    "it": false,
+    "ja": false,
+    "zh": false,
+    "ko": false,
+    "pt": false
+  },
+  "logo": "logo.png",
+  "multi": false,
+  "publishMode": "static",
+  "font": {
+    "body": "open-sans",
+    "heading": "rubik",
+    "ar": {
+      "body": "ibm-plex-sans-arabic",
+      "heading": "noto-kufi-arabic"
+    }
+  },
+  "colorScheme": "auto",
+  "theme_color": "#4060E8",
+  "seo": {
+    "noindex": true
+  },
+  "cssTokens": {
+    "--mx-radius-sm": "2px",
+    "--mx-radius-md": "4px",
+    "--mx-radius-lg": "6px",
+    "--mx-radius-xl": "8px"
+  },
+  "icon": "icon.png"
+}

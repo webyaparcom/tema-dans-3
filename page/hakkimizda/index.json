@@ -1,0 +1,48 @@
+{
+  "name": {
+    "tr": "Kolektif",
+    "en": "Collective",
+    "ar": "التجمّع"
+  },
+  "status": "play",
+  "category": "",
+  "id": "hakkimizda",
+  "url": "",
+  "path": "hakkimizda",
+  "index": 1,
+  "icon": "info",
+  "desing": {
+    "header": [],
+    "body": [
+      "qkpjsz",
+      "3jqfeb",
+      "5xthlw"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Eğitmenler, konuk notları ve sahne ortakları (kurgusal).",
+    "en": "Instructors, guest notes and stage partners (fictional).",
+    "ar": "المدرّبون وملاحظات الضيوف وشركاء المسرح (افتراضي)."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Kolektif",
+    "en": "Collective",
+    "ar": "التجمّع"
+  },
+  "keyword": {
+    "tr": "hakkımızda",
+    "en": "about",
+    "ar": "من نحن"
+  },
+  "text": {},
+  "update": "2026-11-16T20:30:10.020Z",
+  "date": "2026-10-30"
+}

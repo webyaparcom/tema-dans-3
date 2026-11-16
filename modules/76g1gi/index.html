@@ -1,0 +1,125 @@
+<section class="modulex-cagri-seans-sec{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-cagri-seans-sec-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* cagri-seans-sec — cagri-on-gorusme saatleri takvim yaprağında düğme çipleriyle seçtirir; bu modül yerel radyo girişli, numaralı kulvar şeritleri (halat çizgileriyle ayrılmış satırlar) kullanır — seçim CSS :has ile işaretlenir, JS yalnız bağlantıyı günceller. */
+  .modulex-cagri-seans-sec { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --yaziRenk--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-cagri-seans-sec *, .modulex-cagri-seans-sec *::before, .modulex-cagri-seans-sec *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-cagri-seans-sec :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-cagri-seans-sec :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-cagri-seans-sec :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-cagri-seans-sec :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-cagri-seans-sec img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-cagri-seans-sec) img { height: auto; }
+  .modulex-cagri-seans-sec [hidden] { display: none !important; }
+  .modulex-cagri-seans-sec :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-cagri-seans-sec :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-cagri-seans-sec-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-cagri-seans-sec-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-cagri-seans-sec--bassiz .modulex-cagri-seans-sec-bas { display: none; }
+  .modulex-cagri-seans-sec-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-cagri-seans-sec-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-cagri-seans-sec-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-cagri-seans-sec-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-cagri-seans-sec-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-cagri-seans-sec-dugme:hover { transform: translateY(-2px); }
+  .modulex-cagri-seans-sec-dugme--ikincil { background: transparent; color: --yaziRenk--; border-color: --cizgi--; }
+  .modulex-cagri-seans-sec-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-cagri-seans-sec-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-cagri-seans-sec-havuz { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(28px, 5vw, 64px); align-items: center; }
+  .modulex-cagri-seans-sec-havuz--tek { grid-template-columns: minmax(0, 1fr); max-width: 760px; }
+  .modulex-cagri-seans-sec-yazi { display: grid; gap: 14px; justify-items: start; }
+  .modulex-cagri-seans-sec-kulvarlar { display: grid; overflow: hidden; border: 1px solid --cizgi--; border-radius: --yuvarlak--; background: color-mix(in srgb, --accent-- 9%, --kartBg--); }
+  .modulex-cagri-seans-sec-lejant { padding: 14px 20px; border-block-end: 1px solid --cizgi--; background: --kartBg--; font-weight: 750; }
+  .modulex-cagri-seans-sec-kulvar { position: relative; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 14px; min-height: 66px; padding: 12px 20px; cursor: pointer; transition: background 0.25s ease; }
+  .modulex-cagri-seans-sec-kulvar + .modulex-cagri-seans-sec-kulvar { border-block-start: 4px dotted color-mix(in srgb, --accent-- 50%, transparent); }
+  .modulex-cagri-seans-sec-kulvar:hover { background: color-mix(in srgb, --accent-- 7%, --kartBg--); }
+  .modulex-cagri-seans-sec-kulvar::before { content: ""; position: absolute; inset-block: 0; inset-inline-start: 0; width: 5px; background: --accent--; transform: scaleY(0); transition: transform 0.3s ease; }
+  .modulex-cagri-seans-sec-kulvar:has(:checked) { background: --kartBg--; }
+  .modulex-cagri-seans-sec-kulvar:has(:checked)::before { transform: scaleY(1); }
+  .modulex-cagri-seans-sec-kulvar:has(:focus-visible) { outline: 3px solid --accent--; outline-offset: -3px; }
+  .modulex-cagri-seans-sec-radyo { position: absolute; width: 1px; height: 1px; margin: 0; opacity: 0; pointer-events: none; }
+  .modulex-cagri-seans-sec-kno { display: grid; place-items: center; width: 40px; height: 40px; border: 2px solid --cizgi--; border-radius: 50%; font-weight: 800; font-variant-numeric: tabular-nums; transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease; }
+  .modulex-cagri-seans-sec-kulvar:has(:checked) .modulex-cagri-seans-sec-kno { border-color: --accent--; background: --accent--; color: --accentText--; }
+  .modulex-cagri-seans-sec-kad { display: grid; gap: 2px; }
+  .modulex-cagri-seans-sec-kad strong { font-weight: 750; font-variant-numeric: tabular-nums; }
+  .modulex-cagri-seans-sec-kad small { color: --muted--; font-size: 0.88rem; }
+  .modulex-cagri-seans-sec-kikon { color: --accentInk--; font-size: 26px; transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1); }
+  .modulex-cagri-seans-sec-kulvar:has(:checked) .modulex-cagri-seans-sec-kikon { transform: scale(1.25) rotate(-8deg); }
+  .modulex-cagri-seans-sec-secim { display: flex; align-items: center; gap: 8px; padding: 12px 20px; border-block-start: 1px solid --cizgi--; background: --kartBg--; color: --accentInk--; font-weight: 700; }
+  .modulex-cagri-seans-sec-sikon { font-size: 20px; }
+  .modulex-cagri-seans-sec-eylem { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-block-start: 6px; }
+  .modulex-cagri-seans-sec-wa { display: inline-flex; align-items: center; gap: 8px; color: --yaziRenk--; font-weight: 700; text-decoration: none; transition: color 0.25s ease; }
+  .modulex-cagri-seans-sec-wa:hover { color: --accentInk--; }
+  .modulex-cagri-seans-sec-ikinci { color: --muted--; text-decoration: underline; text-underline-offset: 4px; }
+  @media (max-width: 768px) {
+    .modulex-cagri-seans-sec-havuz { grid-template-columns: minmax(0, 1fr); }
+    .modulex-cagri-seans-sec-kulvar { gap: 10px; padding: 10px 14px; }
+  }
+  .modulex-cagri-seans-sec-wasvg { width: 1.25em; height: 1.25em; flex: none; }
+  .modulex-cagri-seans-sec-maddeler { display: grid; gap: 12px; }
+  .modulex-cagri-seans-sec-madde { display: flex; align-items: flex-start; gap: 12px; }
+  .modulex-cagri-seans-sec-mikon { flex: none; color: --accentInk--; font-size: 24px; }
+  .modulex-cagri-seans-sec-myazi { display: grid; gap: 2px; }
+  .modulex-cagri-seans-sec-myazi strong { font-weight: 700; }
+  .modulex-cagri-seans-sec-myazi small { color: --muted--; font-size: 0.92rem; }
+  .modulex-cagri-seans-sec-not { color: --muted--; font-size: 0.9rem; }
+  .modulex-cagri-seans-sec-saat { display: flex; align-items: center; gap: 8px; color: --muted--; font-size: 0.95rem; }
+  .modulex-cagri-seans-sec-saat .material-symbols-outlined { font-size: 20px; color: --accentInk--; }
+  .modulex-cagri-seans-sec-metin { max-width: 62ch; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-cagri-seans-sec :is(.modulex-cagri-seans-sec-baslik, .modulex-cagri-seans-sec-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-cagri-seans-sec-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-cagri-seans-sec { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-cagri-seans-sec *, .modulex-cagri-seans-sec *::before, .modulex-cagri-seans-sec *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-cagri-seans-sec";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const seansSec = (s) => {
+        const r = [...s.querySelectorAll("input[data-ss]")];
+        if (!r.length) return;
+        const baglar = [...s.querySelectorAll("[data-ss-bag]")];
+        baglar.forEach((a) => { a.dataset.ssTaban = a.getAttribute("href") || ""; });
+        const kap = s.querySelector("[data-ss-kap]");
+        const cikti = s.querySelector("[data-ss-cikti]");
+        const guncelle = () => {
+          const x = r.find((e) => e.checked);
+          const v = x ? x.value : "";
+          if (cikti) cikti.textContent = v;
+          if (kap) kap.hidden = !v;
+          baglar.forEach((a) => {
+            const t = a.dataset.ssTaban;
+            if (!t) return;
+            if (!v) { a.setAttribute("href", t); return; }
+            let u;
+            try { u = new URL(t, location.href); } catch (e) { return; }
+            const ek = a.dataset.ssOnek ? a.dataset.ssOnek + " " + v : v;
+            if (/(^|\.)(wa\.me|whatsapp\.com)$/i.test(u.hostname)) u.searchParams.set("text", [u.searchParams.get("text") || "", ek].filter(Boolean).join("\n"));
+            else u.searchParams.set("seans", v);
+            a.setAttribute("href", u.href.replace(/\?[^#]*/, (q) => q.replace(/\+/g, "%20")));
+          });
+        };
+        r.forEach((e) => e.addEventListener("change", guncelle));
+        guncelle();
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      seansSec(s, P, az);
+    });
+  })();
+</script>

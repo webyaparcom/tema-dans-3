@@ -1,0 +1,42 @@
+{
+  "id": "33g381iq9f",
+  "name": {
+    "tr": "Program",
+    "en": "Timetable",
+    "ar": "الجدول"
+  },
+  "description": {
+    "tr": "Haftalık ders tablosu, seviye merdiveni ve sık sorulanlar (kurgusal).",
+    "en": "Weekly timetable, level ladder and FAQ (fictional).",
+    "ar": "الجدول الأسبوعي وسلّم المستويات والأسئلة الشائعة (افتراضي)."
+  },
+  "keyword": {
+    "tr": "ders programı, dans seviyeleri",
+    "en": "class timetable, dance levels",
+    "ar": "جدول الدروس، مستويات الرقص"
+  },
+  "path": "hizmetler",
+  "icon": "calendar_view_week",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "r2xdxe",
+      "sdkqo8",
+      "l0l9dt",
+      "76g1gi"
+    ],
+    "footer": []
+  },
+  "index": 0,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Program",
+    "en": "Timetable",
+    "ar": "الجدول"
+  },
+  "date": "2026-11-16T20:22:22.671Z",
+  "update": "2026-11-16T20:30:10.014Z"
+}

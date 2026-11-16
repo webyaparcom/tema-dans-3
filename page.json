@@ -1,0 +1,90 @@
+{
+  "data": [
+    {
+      "id": "33g381iq9f",
+      "name": {
+        "tr": "Program",
+        "en": "Timetable",
+        "ar": "الجدول"
+      },
+      "description": {
+        "tr": "Haftalık ders tablosu, seviye merdiveni ve sık sorulanlar (kurgusal).",
+        "en": "Weekly timetable, level ladder and FAQ (fictional).",
+        "ar": "الجدول الأسبوعي وسلّم المستويات والأسئلة الشائعة (افتراضي)."
+      },
+      "path": "hizmetler",
+      "icon": "calendar_view_week",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "r2xdxe",
+          "sdkqo8",
+          "l0l9dt",
+          "76g1gi"
+        ],
+        "footer": []
+      },
+      "index": 0
+    },
+    {
+      "name": {
+        "tr": "Kolektif",
+        "en": "Collective",
+        "ar": "التجمّع"
+      },
+      "status": "play",
+      "id": "hakkimizda",
+      "path": "hakkimizda",
+      "category": "",
+      "url": "",
+      "index": 1,
+      "icon": "info",
+      "desing": {
+        "header": [],
+        "body": [
+          "qkpjsz",
+          "3jqfeb",
+          "5xthlw"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Eğitmenler, konuk notları ve sahne ortakları (kurgusal).",
+        "en": "Instructors, guest notes and stage partners (fictional).",
+        "ar": "المدرّبون وملاحظات الضيوف وشركاء المسرح (افتراضي)."
+      }
+    },
+    {
+      "name": {
+        "tr": "İletişim",
+        "en": "Contact",
+        "ar": "اتصل بنا"
+      },
+      "status": "play",
+      "id": "iletisim",
+      "path": "iletisim",
+      "category": "",
+      "url": "",
+      "index": 2,
+      "icon": "call",
+      "desing": {
+        "header": [],
+        "body": [
+          "skb12z",
+          "k8mp01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Adres, telefon ve çalışma saatleri.",
+        "en": "Address, phone and opening hours.",
+        "ar": "العنوان والهاتف وساعات العمل."
+      }
+    }
+  ],
+  "desc": []
+}

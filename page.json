@@ -5,12 +5,16 @@
       "name": {
         "tr": "Program",
         "en": "Timetable",
-        "ar": "الجدول"
+        "ar": "الجدول",
+        "de": "Programm",
+        "ru": "Расписание"
       },
       "description": {
         "tr": "Haftalık ders tablosu, seviye merdiveni ve sık sorulanlar (kurgusal).",
         "en": "Weekly timetable, level ladder and FAQ (fictional).",
-        "ar": "الجدول الأسبوعي وسلّم المستويات والأسئلة الشائعة (افتراضي)."
+        "ar": "الجدول الأسبوعي وسلّم المستويات والأسئلة الشائعة (افتراضي).",
+        "de": "Wochenstundenplan, Niveauleiter und häufige Fragen (fiktiv).",
+        "ru": "Недельное расписание, лестница уровней и частые вопросы (вымышленно)."
       },
       "path": "hizmetler",
       "icon": "calendar_view_week",
@@ -32,7 +36,9 @@
       "name": {
         "tr": "Kolektif",
         "en": "Collective",
-        "ar": "التجمّع"
+        "ar": "التجمّع",
+        "de": "Kollektiv",
+        "ru": "Коллектив"
       },
       "status": "play",
       "id": "hakkimizda",
@@ -54,14 +60,18 @@
       "description": {
         "tr": "Eğitmenler, konuk notları ve sahne ortakları (kurgusal).",
         "en": "Instructors, guest notes and stage partners (fictional).",
-        "ar": "المدرّبون وملاحظات الضيوف وشركاء المسرح (افتراضي)."
+        "ar": "المدرّبون وملاحظات الضيوف وشركاء المسرح (افتراضي).",
+        "de": "Trainer, Gastnotizen und Bühnenpartner (fiktiv).",
+        "ru": "Преподаватели, заметки гостей и партнёры по сцене (вымышленно)."
       }
     },
     {
       "name": {
         "tr": "İletişim",
         "en": "Contact",
-        "ar": "اتصل بنا"
+        "ar": "اتصل بنا",
+        "de": "Kontakt",
+        "ru": "Контакты"
       },
       "status": "play",
       "id": "iletisim",
@@ -82,7 +92,9 @@
       "description": {
         "tr": "Adres, telefon ve çalışma saatleri.",
         "en": "Address, phone and opening hours.",
-        "ar": "العنوان والهاتف وساعات العمل."
+        "ar": "العنوان والهاتف وساعات العمل.",
+        "de": "Adresse, Telefon und Öffnungszeiten.",
+        "ru": "Адрес, телефон и часы работы."
       }
     }
   ],

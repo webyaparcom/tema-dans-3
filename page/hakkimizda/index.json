@@ -2,7 +2,9 @@
   "name": {
     "tr": "Kolektif",
     "en": "Collective",
-    "ar": "التجمّع"
+    "ar": "التجمّع",
+    "de": "Kollektiv",
+    "ru": "Коллектив"
   },
   "status": "play",
   "category": "",
@@ -24,7 +26,9 @@
   "description": {
     "tr": "Eğitmenler, konuk notları ve sahne ortakları (kurgusal).",
     "en": "Instructors, guest notes and stage partners (fictional).",
-    "ar": "المدرّبون وملاحظات الضيوف وشركاء المسرح (افتراضي)."
+    "ar": "المدرّبون وملاحظات الضيوف وشركاء المسرح (افتراضي).",
+    "de": "Trainer, Gastnotizen und Bühnenpartner (fiktiv).",
+    "ru": "Преподаватели, заметки гостей и партнёры по сцене (вымышленно)."
   },
   "spot": {
     "tr": "",
@@ -35,12 +39,16 @@
   "title": {
     "tr": "Kolektif",
     "en": "Collective",
-    "ar": "التجمّع"
+    "ar": "التجمّع",
+    "de": "Kollektiv",
+    "ru": "Коллектив"
   },
   "keyword": {
     "tr": "hakkımızda",
     "en": "about",
-    "ar": "من نحن"
+    "ar": "من نحن",
+    "de": "Über uns",
+    "ru": "О нас"
   },
   "text": {},
   "update": "2026-11-16T20:30:10.020Z",

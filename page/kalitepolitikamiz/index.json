@@ -3,17 +3,23 @@
   "name": {
     "tr": "Kalite Politikamız",
     "en": "Quality Policy",
-    "ar": "سياسة الجودة"
+    "ar": "سياسة الجودة",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "description": {
     "tr": "Kalite politikamız",
     "en": "Our quality policy",
-    "ar": "سياسة الجودة لدينا"
+    "ar": "سياسة الجودة لدينا",
+    "de": "Unsere Qualitätspolitik",
+    "ru": "Наша политика качества"
   },
   "keyword": {
     "tr": "Kalite Politikamız",
     "en": "quality policy, quality, continuous improvement",
-    "ar": "سياسة الجودة, الجودة, التحسين المستمر"
+    "ar": "سياسة الجودة, الجودة, التحسين المستمر",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "path": "kalitepolitikamiz",
   "icon": "verified",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Kalite Politikamız</h2>\n<p>En çok 14 kişilik gruplar, seviye geçişinde eğitmen görüşmesi ve her dönem sonunda geri bildirim.</p>",
     "en": "<h2>Our quality policy</h2>\n<p>Groups of at most 14, a talk with the instructor before moving up a level and feedback at the end of every term.</p>",
-    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>مجموعات لا تتجاوز 14 شخصًا، وحديث مع المدرّب قبل الانتقال إلى مستوى أعلى، وملاحظات في نهاية كل فصل.</p>"
+    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>مجموعات لا تتجاوز 14 شخصًا، وحديث مع المدرّب قبل الانتقال إلى مستوى أعلى، وملاحظات في نهاية كل فصل.</p>",
+    "de": "<h2>Unsere Qualitätsrichtlinie</h2>\n<p>Gruppen von maximal 14 Personen, ein Gespräch mit dem Trainer vor dem Levelwechsel und Feedback am Ende jedes Semesters.</p>",
+    "ru": "<h2>Наша политика качества</h2>\n<p>Группы не более 14 человек, беседа с инструктором перед переходом на новый уровень и обратная связь в конце каждого семестра.</p>"
   },
   "title": {
     "tr": "Kalite Politikamız",
     "en": "Quality Policy",
-    "ar": "سياسة الجودة"
+    "ar": "سياسة الجودة",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "date": "2026-11-16T20:22:22.503Z",
   "update": "2026-11-16T20:30:10.034Z",

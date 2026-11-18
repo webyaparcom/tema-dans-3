@@ -4,12 +4,16 @@
   "description": {
     "tr": "Pist Dans Kolektifi: Kadıköy’de yetişkinler için lindy hop, salsa, kizomba, Arjantin tangosu ve çağdaş dans. Seviye merdiveni, haftalık ders tablosu ve ücretsiz deneme dersi. Demo site; içerik kurgusaldır.",
     "en": "Pist Dance Collective: lindy hop, salsa, kizomba, Argentine tango and contemporary dance for adults in Kadikoy. A level ladder, a weekly timetable and a free trial class. Demo site; content is fictional.",
-    "ar": "تجمّع بيست للرقص: ليندي هوب وسالسا وكيزومبا وتانغو أرجنتيني ورقص معاصر للبالغين في كاديكوي. سلّم مستويات وجدول أسبوعي ودرس تجريبي مجاني. موقع تجريبي؛ المحتوى افتراضي."
+    "ar": "تجمّع بيست للرقص: ليندي هوب وسالسا وكيزومبا وتانغو أرجنتيني ورقص معاصر للبالغين في كاديكوي. سلّم مستويات وجدول أسبوعي ودرس تجريبي مجاني. موقع تجريبي؛ المحتوى افتراضي.",
+    "de": "Pist Dance Collective: Lindy Hop, Salsa, Kizomba, Argentinischer Tango und zeitgenössischer Tanz für Erwachsene in Kadıköy. Stufenmodell, wöchentlicher Stundenplan und kostenlose Probestunde. Demo-Seite; Inhalte sind fiktiv.",
+    "ru": "Pist Dance Collective: линди-хоп, сальса, кизомба, аргентинский танго и современный танец для взрослых в Кадыкёе. Система уровней, недельное расписание и бесплатный пробный урок. Демо-сайт; контент вымышленный."
   },
   "keyword": {
     "tr": "dans kursu kadıköy, lindy hop, salsa dersi, kizomba, tango dersi, çağdaş dans, yetişkin dans",
     "en": "dance classes kadikoy, lindy hop, salsa class, kizomba, tango lesson, contemporary dance, adult dance",
-    "ar": "دروس رقص كاديكوي، ليندي هوب، دروس سالسا، كيزومبا، دروس تانغو، رقص معاصر، رقص للبالغين"
+    "ar": "دروس رقص كاديكوي، ليندي هوب، دروس سالسا، كيزومبا، دروس تانغو، رقص معاصر، رقص للبالغين",
+    "de": "Tanzkurse Kadıköy, Lindy Hop, Salsa-Kurs, Kizomba, Tango-Kurs, Contemporary Dance, Tanz für Erwachsene",
+    "ru": "танцевальные курсы в Кадыкёе, линди-хоп, урок сальсы, кизомба, урок танго, современный танец, танцы для взрослых"
   },
   "category": "Kurumsal",
   "name": "Pist Dans",
@@ -18,15 +22,27 @@
     "tr": true,
     "en": true,
     "ar": true,
-    "de": false,
-    "ru": false,
+    "de": true,
+    "ru": true,
     "es": false,
     "fr": false,
     "it": false,
     "ja": false,
     "zh": false,
     "ko": false,
-    "pt": false
+    "pt": false,
+    "fa": false,
+    "he": false,
+    "ur": false,
+    "nl": false,
+    "pl": false,
+    "uk": false,
+    "az": false,
+    "ka": false,
+    "el": false,
+    "bg": false,
+    "ro": false,
+    "hi": false
   },
   "logo": "logo.png",
   "multi": false,
